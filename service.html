@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugamyam Fine Destinations</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+     body {
+      font-family: 'Arial', sans-serif; /* Change to your desired font */
+    }
+
+    .custom-card {
+      border: none;
+      transition: transform 0.3s ease;
+    }
+
+    .custom-card:hover {
+      transform: scale(1.05);
+    }
+
+    .card-img-top {
+      transition: transform 0.3s ease;
+    }
+
+    .custom-card:hover .card-img-top {
+      transform: scale(1.1);
+    }
+    
+    .fixed-image {
+      width: 350px; /* Adjust width as needed */
+      height: 300px; /* Adjust height as needed */
+    }
+    .step {
+      padding: 20px;
+      border: 1px solid #ced4da;
+      border-radius: 10px;
+      background-color: #fff;
+    }
+    .welcome-section {
+      padding: 100px 0;
+      text-align: center;
+    }
+
+    .welcome-text {
+      font-size: 48px;
+      font-weight: bold;
+      color: #333;
+      /* margin-bottom: 20px; */
+    }
+    .welcome-text-fine {
+      font-size: 23px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    .subtext {
+      font-size: 24px;
+      color: #666;
+    }
+    .frame-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .frame {
+      width: calc(33.33% - 20px);
+      position: relative;
+    }
+
+    .frame img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .frame {
+        width: calc(50% - 20px);
+      }
+    }
+
+    @media (max-width: 576px) {
+      .frame {
+        width: calc(100% - 20px);
+      }
+    }
+    .service {
+      margin-bottom: 30px;
+    }
+    .image-container-world {
+      position: relative;
+      height: 500px; /* Set image container height */
+      overflow: hidden; /* Hide overflow to prevent image spill */
+    }
+
+    .overlay-text {
+      position: absolute;
+      top: 17%; /* Position text vertically centered */
+      left: 50%; /* Position text horizontally centered */
+      transform: translate(-50%, -50%); /* Center text using translate */
+      color: rgb(5, 5, 5); /* Text color */
+      font-size: 24px; /* Text font size */
+      text-align: center; /* Center-align text */
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add shadow to text */
+    }
+
+    .image-world {
+      width: 100%; /* Ensure image fills container width */
+      height: auto; /* Maintain aspect ratio */
+    }
+    .section-heading {
+      margin-top: 50px;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 10px;
+    }
+    
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    color: #333;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    color: #007bff;
+}
+
+.footer-divider {
+    border-top: 1px solid #ccc;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.footer .text-muted {
+    color: #888;
+}
+  </style>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="./logo.png"
+                    style="max-width: 123px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="service.html">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Fixed Depatures</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">International Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Domestic Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contactus.html">Contact Us</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="#">TV</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Music</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Support</a>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row welcome-section">
+          <div class="col-md-12">
+            <h1 class="welcome-text">Services </h1>
+            <!-- <h3 class="welcome-text-fine">FiNE DESTiNATiONS</h3>
+            <p class="subtext">Embark on Your Journey, Let Us Make Every Mile Memorable!</p>
+            <a href="#" class="btn btn-primary">Explore Now</a> -->
+          </div>
+        </div>
+      </div>
+    <!-- Hero Section -->
+    <div class="container mt-5">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card custom-card">
+              <img src="./Amarnath.jpg" class="card-img-top fixed-image"  alt="...">
+              <div class="card-body">
+                <h4 class="card-title"><strong>Amarnath</strong> </h4>
+                <p class="card-text">Divinity to its epitome to meet and feel the vibe of that entity above us</p>
+                <p class="card-text"><strong>From INR 45000 or INR 4499/mo. for 10 mo. </strong> </p>
+                <a href="#" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <!-- Add more cards here -->
+          <div class="col-md-4">
+            <div class="card custom-card">
+              <img src="./jaipur.jpg" class="card-img-top fixed-image" alt="...">
+              <div class="card-body">
+                <h4 class="card-title"><strong>Jaipur</strong> </h4>
+                <p class="card-text">Architecture marvels to witness the greatness and quality of our historical kings and legends</p>
+                <p class="card-text"><strong>From INR 45000 or INR 4499/mo. for 10 mo. </strong> </p>
+                <a href="#" class="btn btn-primary">Book Now</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card custom-card">
+              <img src="./Shimla.jpg" class="card-img-top fixed-image" alt="...">
+              <div class="card-body">
+                <h4 class="card-title"><strong>Shimla</strong> </h4>
+                <p class="card-text">Enjoy your honeymoon with chillness in and out of you with your beloved ones</p>
+                <p class="card-text"><strong>From INR 45000 or INR 4499/mo. for 10 mo. </strong> </p>
+                <a href="#" class="btn btn-primary">Book now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+<br>
+    <!-- Main Content -->
+    <section style="background-color: black;" ><br>
+
+            <div class="container mt-5" style="color: dodgerblue;">
+                <h2  class="text-center mb-4" style="color: white;">Want to make your Honeymoon special with the tallest skyscrapper in the world?</h2>
+                <br>
+                <h4 style="color: white;" class="mb-4">Honeymoon to Dubai </h4>
+              
+                <div class="row">
+                  <div class="col-md-4">
+                    <div class="step">
+                      <h2>Step 1: Plan Your Itinerary</h2>
+                      <p>Decide which attractions and activities you want to include in your trip.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="step">
+                      <h2>Step 2: Book Accommodation</h2>
+                      <p>Choose a hotel or resort that fits your preferences and budget.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="step">
+                      <h2>Step 3: Arrange Transportation</h2>
+                      <p>Book flights and transportation within Dubai, such as taxis or rental cars.</p>
+                    </div>
+                  </div>
+                </div>
+              
+                <div class="row mt-4">
+                  <div class="col-md-4">
+                    <div class="step">
+                      <h2>Step 4: Explore Attractions</h2>
+                      <p>Visit iconic landmarks like the Burj Khalifa, Dubai Mall, and Dubai Marina.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="step">
+                      <h2>Step 5: Enjoy Leisure Activities</h2>
+                      <p>Relax on pristine beaches, go shopping, or experience desert adventures.</p>
+                    </div>
+                  </div>
+                  <div class="col-md-4">
+                    <div class="step">
+                      <h2>Step 6: Experience Nightlife</h2>
+                      <p>Explore Dubai's vibrant nightlife scene with clubs, bars, and entertainment.</p>
+                    </div>
+                  </div>
+                </div>
+                <br>
+
+                <h4 style="color: white;" class="mb-4">From INR 245000 for 2 or INR 10202/mo. for 24 mo.  </h4>
+                <a href="#" class="btn btn-primary">Book Now</a>
+                <br>
+                <br>
+
+              </div>
+    </section>
+
+<br>
+<section>
+    <div class="container">
+        <h1 class="text-center mb-4"><strong> Explore the Architectural marvel with Sugamyam </strong></h1>
+      
+        <div class="frame-container">
+          <div class="frame">
+            <img src="./great wall of china.jpg" alt="Photo 1">
+          </div>
+          <div class="frame">
+            <img src="./colosum.jpg" alt="Photo 2">
+          </div>
+          <div class="frame">
+            <img src="./eifle tower.jpg" alt="Photo 5">
+          </div>
+        
+          <div class="frame">
+            <img src="./tajmahal.jpg" alt="Photo 3">
+          </div>
+          <div class="frame">
+            <img src="./jesus.jpg" alt="Photo 4">
+          </div>
+          <div class="frame">
+            <img src="./leaning tower of pisa.jpg" alt="Photo 6">
+          </div>
+        </div>
+      </div>
+</section>
+
+<section>
+    <div class="container">
+        <h1 class="mt-5 mb-4 text-center mb-4" ><strong>Our Services </strong> </h1>
+        
+        <div class="row">
+          <div class="col-md-4">
+            <div class="service">
+              <h3>Flight Booking</h3>
+              <p>Book domestic and international flights at competitive prices.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service">
+              <h3>Hotel Reservations</h3>
+              <p>Find the perfect accommodation for your trip with our wide range of hotel options.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service">
+              <h3>Tour Packages</h3>
+              <p>Explore our curated tour packages for exciting destinations around the world.</p>
+            </div>
+          </div>
+        </div>
+      
+        <div class="row">
+          <div class="col-md-4">
+            <div class="service">
+              <h3>Car Rentals</h3>
+              <p>Rent a car for convenient transportation during your travels.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service">
+              <h3>Train Bookings</h3>
+              <p>Embark on a luxurious Travel vacation with our train booking services.</p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service">
+              <h3>Travel Insurance</h3>
+              <p>Stay protected during your travels with comprehensive travel insurance coverage.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+</section>
+
+
+<!-- <section>
+    <div class="container-fluid p-0">
+        <div class="image-container-world">
+          <img src="./world.jpg" alt="Image" class="image-world">
+          <div class="overlay-text">
+            <h1>Welcome to the world of Travel with Sacred and divine Feel</h1>
+            <p>Discover the best travel experiences with us round the globe</p>
+          </div>
+        </div>
+      </div>
+</section> -->
+<br>
+
+<section>
+    <div class="container">
+        <h1 class="text-center mb-4" ><strong> Terms and Conditions </strong></h1>
+      
+        <h2>Booking your Holiday</h2>
+        <p>Your contract in respect of your holiday is made with Sugamyam Fine Destinations (‘the Company‘),
+            registered in Chennai and all bookings are subject to these terms and conditions.All communications by the Company in relation to your holiday will be sent to the address stated
+            on the booking form.All bookings must be made through an authorised representative of the Company. At the time of
+            booking the Company booking form must be completed and submitted together with a deposit of 50% of
+            the total cost of the booking.Receipt of the deposit and booking form by the Company does neither guarantee nor imply
+            confirmation of the booking. No booking shall be confirmed until the Company issues a written
+            notice. The Company reserves the right to refuse a booking without giving any reason and shall in
+            that event return any deposit received.Your holiday must be paid in full at least 30 days before the departure date. If payment is not
+            received by the due date, the Company reserves the right to cancel the booking and retain the
+            deposit. The person who signs the booking form guarantees payment of the total amount shown on the
+            booking form in accordance with these conditions. It is the responsibility of the signatory to
+            ensure the Company receives payment in full by the due date. No reminders will be sent.If you book within 30 days of your departure date payment must be made in full at the time of
+            booking.All special requests, such as dietary requirements, should be noted on the booking form.The Company will provide the service as set out and confirmed in writing.</p>
+      
+        <h2>Price Policy</h2>
+        <p>The Company is under no obligation to furnish a breakdown of the costs involved in a holiday.
+            The Company reserves the right to notify you of any increase in price before accepting your
+                booking.
+             After a Confirmation Invoice has been issued, unless you choose to pay for your holiday in full at
+                the time of booking, the price of your holiday is subject to the possibilities of surcharges in
+                certain limited circumstances. However, a surcharge will only be levied to allow for variations in
+                transportation cost, including cost of fuel, increase in normal published airfares, taxes or fees
+                chargeable for services such as landing taxes at airports, the exchange rate applied to the
+                particular package or if the government or regulatory body introduce an increase of taxes. Even
+                then, the Company will absorb an amount equal to 2% of your holiday price (excluding insurance
+                premiums and amendment charges) before passing on any surcharge to you. Only amounts in excess of
+                this 2% will be surcharged. Surcharges will be notified by a revised Confirmation Invoice sent to
+                you.
+            If a surcharge would increase the total holiday price shown on your original Confirmation Invoice
+                by 10% or more, you may cancel your booking within 14 days of the date of issue of the revised
+                Invoice and obtain a full refund of all payments made to the Company and any amendment charges
+                previously incurred.
+            Optionally, you may choose to pay for your holiday in full at the time of booking, in which case
+                your holiday price will be fixed at the cost quoted by the Company at the time. To qualify for this
+                benefit you should return the Confirmation Invoice to the Company with full payment to reach the
+                Company within 7 days of the date printed on the Confirmation Invoice.
+            The financial commitments offered above by the Company mean that the Company is not able to reduce
+                the holiday prices should the value of the Omani Rial strengthen.</p>
+      
+        <h2>Cancellation and Changes by the Company</h2>
+        <p>Occasionally it may be deemed necessary to make changes to your holiday and the Company reserves
+            the right to do so at any time, and you will be notified of any changes at the earliest possible
+            opportunity. If a major change to your tour is necessary, providing it does not arise from
+            circumstances beyond the Company’s control, you may choose (i) to accept the change of arrangements
+            (ii) to purchase another holiday from us or (iii) to cancel your holiday. Compensation may be
+            payable in cases of major change as detailed below.
+        No compensation will be payable for minor changes. Minor changes include minimal changes to
+            departure and arrival times, changes to the type of aircraft used and restaurant and accommodation
+            changes to a comparable or superior standard.
+        Major changes include cancellation, changes to your UK airport, delays in departure or return by
+            more than 12 hours and accommodation changes to an inferior standard of accommodation.
+        Compensation will not be paid for changes or cancellations caused by Acts of God (Force Majeure),
+            war, threat of war, riot, civil strike, industrial dispute, terrorist activity, natural or man-made
+            disaster, fire, technical problems to transport, closure or congestion of airports, strikes or other
+            industrial action, adverse weather conditions or any other event beyond the Company’s control. It is
+            essential that you take out adequate travel insurance.
+         The Company reserve the right to cancel your holiday at any time before the date of departure,
+            even after a confirmation notice has been sent. If your holiday is cancelled the Company will refund
+            in full the money you have already paid. No compensation will be payable.
+         Transportation is subject to the conditions of carriage of the carrier, some of which may limit or
+            exclude liability. These conditions are often the subject of international agreement between
+            countries and copies of the conditions, which apply to your holiday journey, will normally be found
+            on the carrier’s tickets.
+         If you fail to pay the balance of the holiday price at least 30 days before departure, the Company
+            will treat the booking as cancelled and levy the cancellation charges set out below
+         The company also has the right to refuse any person as a member of the tour, if in their opinion
+            that person could endanger the health, safety and enjoyment of others on the tour. In any of the
+            events mentioned above, the company’s sole liability and the client’s sole remedy will be limited to
+            a refund of any monies paid, less the amount for services already utilised plus administrative fees.
+        
+</p>
+
+        <h2>Cancellation and Changes by You</h2>
+        <p>You may cancel your holiday at any time providing you notify the Company in writing. The following
+            charges will be levied on any cancellation:
+        30 days or more 50% of Deposit
+        15 – 30 days 100% of Deposit
+        8 – 15 days 80% of Tour Cost
+        1 – 7 days 100% of Tour Cost
+         After the itinerary is confirmed, the client is permitted free of administration charges one set
+            of amendments, though will be liable for any added cost this may add to the tour, including airline
+            charges, hotels etc. Any further modifications, which are instigated by the client, will incur a
+            charge of 25 Omani Rials due to communication and administration expenses that may have incurred.
+        </p>
+
+        <h2>Our Responsibilities</h2>
+        <p> The Company does not own or manage the aircraft, accommodation, restaurants and other facilities
+            used in conjunction with the tours arranged. While the Company has exercised care in selecting
+            providers of travel, accommodation, restaurants and other facilities, the Company have not had the
+            opportunity to inspect and do not represent that such aircraft, accommodation, restaurants, and
+            other facilities and services have been inspected.
+        The Company is not responsible if you or any member of your party suffer death, illness or injury
+            as a result of any failure to perform or improper performance of any part of our contract with you
+            where such failure is attributable to (i) the acts and/or omissions of any member of the party, or
+            (ii) those of a third party not connected with the provision of your holiday, or (iii) an event
+            which neither the Company or the service provider could have foreseen or prevented even with due
+            care.
+        Should any member of your party suffer illness, injury or death through misadventure arising out
+            of an activity, which does not form part of the holiday the Company has arranged for you the Company
+            cannot accept liability. The Company will offer general assistance where appropriate.
+         The Company regret that no refund will be made on unused tickets where travel, sporting event or
+            other types of ticket, unless a refund can be obtained from the carrier or provider.</p>
+
+        <h2>Your Responsibilities</h2>
+        <p>    You are responsible for arranging your own travel insurance, though an appropriate policy can be
+            incorporated into your tour package. Details of all insurance policies held by each member of your
+            party must be provided on the booking form. No booking forms can be accepted without sufficient
+            proof that personal policies have been arranged. Please ensure that your insurance cover applies to
+            the specific activities you are booking and which are confirmed on the Confirmation Invoice.
+         Each member of the party must have a valid passport, visas and all necessary documentation for the
+            countries they are touring. The Company accept no responsibility for any delay or expense should
+            your documents not be in order.
+        You are responsible for checking-in for flights at the correct time and for presenting yourself to
+            take up all pre-booked components of your holiday. The Company cannot accept responsibility for
+            clients missing flights as a result of late check-ins and no credit or refunds will be given if you
+            fail to take up any component of your holiday. No credit of refunds will be given for lost, mislaid
+            or destroyed travel documents.
+         By booking a holiday with the Company you undertake to behave in an orderly manner and not to
+            disrupt the enjoyment of others on holiday with you nor to do anything to bring the reputation of
+            the Company into disrepute. If you breach this clause your holiday will be terminated with immediate
+            effect and the Company will have no further contractual obligation to you. The Company will be
+            entitled to recover from the offending party and/or the person who signed the booking form
+            compensation for any damage caused.
+        It is the responsibility of the person who signs the Booking Form to disclose any pre-existing
+            medical conditions that members of their party may have.
+         All equipment and personal effects shall be all times and in all circumstances at the owner’s
+            risk. The Company cannot accept responsibility for any loss or damage or delay to your luggage or
+            effects unless directly caused by the negligence of one of our representatives.</p>
+
+        <h2>Smoking</h2>
+        <p>The Company forbids smoking in any vehicle operated by the Company. Frequent stops can be arranged
+            for those who desire to smoke. All accommodation will be reserved with non-smoking rooms, unless the
+            client specifically requires a smoking room. Confirmation is depending on hotel availability.</p>
+
+        <h2>Waiver</h2>
+        <p>The Company will undertake to ensure the safety of the client throughout the tour, however aspects of
+            each particular tour may not be without an element of danger. Clients should be prepared to sign a
+            ‘Waiver of Responsibility’ form before they begin their tour. This form is an understanding that all
+            clients need to exercise judgement and care at all times to ensure their own safety and that of
+            their fellow tourists.</p>
+
+        <h2>Disclaimer</h2>
+        <p>The Company has made all reasonable efforts to check the accuracy of the information contained in our
+            website. The Company cannot however accept any responsibility for any errors or omissions that may
+            appear in this site.</p>
+
+        <h2>Complaints</h2>
+        <p>  If you have a problem during your holiday, please inform the relevant airline, hotel, local agent
+            of other suppliers immediately so that they can endeavour to put things right. If you cannot resolve
+            the problems, you must contact the Company office so that they are given an opportunity to help. The
+            Company will not hold themselves responsible for the non-performance of an itinerary through causes
+            beyond their control or when they are not notified of a problem at the point where remedial action
+            can be taken. In the unlikely event that a complaint cannot be resolved at the time, your should
+            write to the Company within 28 days of returning home, giving your original booking reference number
+            and all other relevant information. If you fail to take any of these steps you will hinder the
+            Company’s ability to put any problem right and/or investigate it fully and any right you have to
+            receive compensation will be reduced or completely invalidated.
+        Any dispute that may arise will be governed by Omani law and both parties shall submit to the
+            jurisdiction of the Omani Courts.
+        All information given by the Company whether in writing or orally is to the best of the Company’s
+            knowledge and believed correct at the time given and is given in good faith. The booking conditions
+            shall take precedence over any other warranty or condition that may have been given.</p>
+
+        <h2>Data Protection Act</h2>
+        <p>It may be necessary for the Company to ask you for certain personal information. Examples of this
+            would be dietary requirements, disability/medical or religious information etc. This information
+            will be kept confidential by the Company and is available to you to inspect during the Company’s
+            normal working hours. It will be passed to the suppliers, if it is necessary for them to know this
+            information in order to fulfill the Company’s contract to you.</p>
+
+        <!-- <div class="section-heading">COntact us</div> -->
+        <!-- <p>This is an example terms and conditions page. You can modify it as per your requirements.</p> -->
+      </div>
+</section>
+
+
+<div class="container">
+    <div class="row welcome-section">
+      <div class="col-md-12">
+        <h5 class="welcome-text" style="font-size: 69px;">Reach out to us on any queries at</h5>
+        <p>Email: <a href="mailto:info@sugamyam.com">info@sugamyam.com</a></p>
+        <a href="#" class="btn btn-primary">Lets connect</a>
+      </div>
+    </div>
+  </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 footer-divider"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-muted">Copyright &copy; 2015 Sugamyam FiNE DESTiNATiON | All rights reserved.</p>
+                </div>
+                <ul class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a> |
+                    <a href="terms.html">Terms of Use</a> |
+                    <a href="#">Sales and Refunds</a> |
+                    <a href="#">Legal</a> |
+                    <a href="site.html">Site Map</a>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
