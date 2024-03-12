@@ -179,143 +179,138 @@
     .footer .text-muted {
         color: #888;
     }
+
+    .card {
+        width: 300px;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    .card img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px 10px 0 0;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
+    .card-content h3 {
+        margin-top: 0;
+        font-size: 1.5em;
+    }
+
+    .card-content p {
+        margin-bottom: 0;
+    }
+
+    .custom-card-travel {
+        border: 5px solid;
+        /* Default border color */
+        transition: border-color 0.3s ease;
+        /* Smooth transition */
+    }
+
+    .custom-card-travel:hover {
+        border-color: #9e025f;
+        /* Border color on hover */
+    }
+
+    .card-travel {
+        width: 500px;
+        height: auto;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+        background-color: white;
+    }
 </style>
 
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light ">
-        <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="./logo.png" style="max-width: 123px;"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Fixed Depatures</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">International Destinations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Domestic Destinations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contactus.html">Contact Us</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">TV</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Music</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Support</a>
-                    </li> -->
-                </ul>
+    <section style="background-color: #000000;">
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container">
+                <a class="navbar-brand" href="index.html"><img src="./logo.png" style="max-width: 300px"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#" style="color: white;">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="color: white;">Fixed Depatures</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="color: white;">International </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="color: white;">Domestic </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="color: white;">VISA </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="color: white;">Transfers </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="color: white;">Hotels </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="color: white;">Rail </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contactus.html" style="color: white;">Contact Us</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="#">TV</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Music</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Support</a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+
             </div>
-        </div>
-    </nav>
-    <div class="container">
+        </nav>
+    </section>
+
+    <!-- <div class="container">
         <div class="row welcome-section">
             <div class="col-md-12">
-                <h1 class="welcome-text">Sugamyam </h1>
-                <h3 class="welcome-text-fine">FiNE DESTiNATiONS</h3>
-                <p class="subtext">Embark on Your Journey, Let Us Make Every Mile Memorable!</p>
-                <!-- <a href="#" class="btn btn-primary">Explore Now</a> -->
+                 <h1 class="welcome-text">Sugamyam </h1>
+                <h3 class="welcome-text-fine">FiNE DESTiNATiONS</h3> -->
+    <!-- <p class="subtext">Embark on Your Journey, Let Us Make Every Mile Memorable!</p> -->
+    <!-- <a href="#" class="btn btn-primary">Explore Now</a>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- Hero Section -->
-    <div class="container mt-5">
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card custom-card">
-                    <img src="./Amarnath.jpg" class="card-img-top fixed-image" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title"><strong>Amarnath</strong> </h4>
-                        <p class="card-text">Divinity to its epitome to meet and feel the vibe of that entity above us
-                        </p>
-                        <!-- <p class="card-text"><strong>From INR 45000 or INR 4499/mo. for 10 mo. </strong> </p> -->
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
-                </div>
-            </div>
-            <!-- Add more cards here -->
-            <div class="col-md-4">
-                <div class="card custom-card">
-                    <img src="./Kashmir.jpg" class="card-img-top fixed-image" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title"><strong>Kashmir</strong> </h4>
-                        <p class="card-text">High above the sea level, high on with love and nature</p>
-                        <!-- <p class="card-text"><strong>From INR 45000 or INR 4499/mo. for 10 mo. </strong> </p> -->
-                        <a href="#" class="btn btn-primary">Book Now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card custom-card">
-                    <img src="./Alleppy boat house.jpg" class="card-img-top fixed-image" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title"><strong>Alleppy</strong> </h4>
-                        <p class="card-text">Windy waves with chill green ambience to add beauty to nature</p>
-                        <!-- <p class="card-text"><strong>From INR 45000 or INR 4499/mo. for 10 mo. </strong> </p> -->
-                        <a href="#" class="btn btn-primary">Book now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card custom-card">
-                    <img src="./Leh.jpg" class="card-img-top fixed-image" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title"><strong>Leh and Ladakh</strong> </h4>
-                        <p class="card-text">Enjoy your honeymoon with chillness in and out of you with your beloved
-                            ones</p>
-                        <!-- <p class="card-text"><strong>From INR 45000 or INR 4499/mo. for 10 mo. </strong> </p> -->
-                        <a href="#" class="btn btn-primary">Book now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card custom-card">
-                    <img src="./Manali.jpg" class="card-img-top fixed-image" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title"><strong>Manali</strong> </h4>
-                        <p class="card-text">Mountains that invite with love and chilled warmth to enjoy its beauty</p>
-                        <!-- <p class="card-text"><strong>From INR 45000 or INR 4499/mo. for 10 mo. </strong> </p> -->
-                        <a href="#" class="btn btn-primary">Book now</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card custom-card">
-                    <img src="./Munnar.jpg" class="card-img-top fixed-image" alt="...">
-                    <div class="card-body">
-                        <h4 class="card-title"><strong>Munar</strong> </h4>
-                        <p class="card-text">Land of greenary that shows the true essence of what nature is</p>
-                        <!-- <p class="card-text"><strong>From INR 45000 or INR 4499/mo. for 10 mo. </strong> </p> -->
-                        <a href="#" class="btn btn-primary">Book now</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <br>
+
+
+
     <!-- Main Content -->
     <section style="background-color: black;"><br>
-
+        <div>
+            <img src="./globe.png" style="margin-left: 500px;" alt="...">
+        </div>
         <div class="container mt-5" style="color: dodgerblue;">
-            <h2 class="text-center mb-4" style="color: white;">Want to make your Honeymoon special with the tallest
-                skyscrapper in the world?</h2>
+            <h2 class="text-center mb-4" style="color: white;">Dream, Explore, Discover – With Us!</h2>
             <br>
-            <h4 style="color: white;" class="mb-4">Honeymoon to Dubai </h4>
+            <!-- <h4 style="color: white;" class="mb-4">Honeymoon to Dubai </h4> -->
 
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-md-4">
                     <div class="step">
                         <h2>Step 1: Plan Your Itinerary</h2>
@@ -334,9 +329,9 @@
                         <p>Book flights and transportation within Dubai, such as taxis or rental cars.</p>
                     </div>
                 </div>
-            </div>
+            </div> -->
 
-            <div class="row mt-4">
+            <!-- <div class="row mt-4">
                 <div class="col-md-4">
                     <div class="step">
                         <h2>Step 4: Explore Attractions</h2>
@@ -355,84 +350,66 @@
                         <p>Explore Dubai's vibrant nightlife scene with clubs, bars, and entertainment.</p>
                     </div>
                 </div>
-            </div>
-            <br>
+            </div> -->
+            <!-- <br> -->
 
-            <h4 style="color: white;" class="mb-4">From INR 245000 for 2 or INR 10202/mo. for 24 mo. </h4>
-            <a href="#" class="btn btn-primary">Book Now</a>
-            <br>
-            <br>
+            <!-- <h4 style="color: white;" class="mb-4">From INR 245000 for 2 or INR 10202/mo. for 24 mo. </h4>
+            <a href="#" class="btn btn-primary">Book Now</a> -->
+
 
         </div>
     </section>
-
     <br>
+
     <section>
         <div class="container">
-            <!-- <h1 class="text-center mb-4"><strong> Pilgrimage Destinations </strong></h1> -->
-            <h5 class="text-center mb-4 welcome-text" style="font-size: 69px;">Pilgrimage Destinations</h5>
+            <h5 class="text-center mb-4 welcome-text" style="font-size: 60px;">Our Services </h5>
+            <a style="margin-left: 500px" class="icon icon-after icon-chevronright" aria-label="Learn more">Learn more
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                    class="bi bi-chevron-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                        d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                </svg> </a>
+            <br>
+            <br>
 
-            <div class="frame-container">
-               
-                <div class="frame">
-                    <img src="./tirupati.jpg" alt="Photo 2">
-                </div>
-                <div class="frame">
-                    <img src="./tanjore.jpg" alt="Photo 1">
-                </div>
-                <div class="frame">
-                    <img src="./meenatchi.jpg" alt="Photo 5">
-                </div>
-
-                <!-- <div class="frame">
-                    <img src="./tajmahal.jpg" alt="Photo 3">
-                </div>
-                <div class="frame">
-                    <img src="./jesus.jpg" alt="Photo 4">
-                </div>
-                <div class="frame">
-                    <img src="./leaning tower of pisa.jpg" alt="Photo 6">
-                </div> -->
-            </div>
-        </div>
-    </section>
-<br>
-    <section>
-        <div class="container">
-            <h5 class="text-center mb-4 welcome-text" style="font-size: 69px;">Our Services </h5>
             <!-- <h1 class="mt-5 mb-4 text-center mb-4"><strong>Our Services </strong> </h1> -->
 
             <div class="row">
                 <div class="col-md-4">
                     <div class="service">
-                        <h3>Flight Booking</h3>
+                        <h3>Flights</h3>
                         <p>Book domestic and international flights at competitive prices.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="service">
-                        <h3>Hotel Reservations</h3>
+                        <h3>Hotels</h3>
                         <p>Find the perfect accommodation for your trip with our wide range of hotel options.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="service">
-                        <h3>Tour Packages</h3>
-                        <p>Explore our curated tour packages for exciting destinations around the world.</p>
+                        <h3>Trips</h3>
+                        <p>Explore our curated tour packages for exciting DESTiNATiONS around the world.</p>
                     </div>
                 </div>
             </div>
-
+            <div>
+                <img src="./travelpartner.png" style="margin-left: 300px;" alt="...">
+            </div>
+            <br>
+            <br>
             <div class="row">
                 <div class="col-md-4">
                     <div class="service">
-                        <h3>Car Rentals</h3>
+                        <h3>Transfers</h3>
                         <p>Rent a car for convenient transportation during your travels.</p>
                     </div>
                 </div>
                 <div class="col-md-4">
                     <div class="service">
-                        <h3>Train Bookings</h3>
+                        <h3>Rail</h3>
                         <p>Embark on a luxurious Travel vacation with our train booking services.</p>
                     </div>
                 </div>
@@ -446,6 +423,138 @@
         </div>
 
     </section>
+    <br>
+    <section style="background-color: #01013c;">
+       
+               
+                <br>
+                <br>
+                <div class="row">
+
+               
+                <div class="col-md-4">
+                    <div style="color: #fff;padding-left: 275px;" >
+                        <h6 style="font-size: 75px;" >International</h6><h3> DESTiNATiONS</h3>
+                        <a  class="icon icon-after icon-chevronright" aria-label="Learn more">Explore
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                            </svg> </a>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+                            <br>
+
+                        <h6 style="font-size: 75px;" >Domestic </h6><h3> DESTiNATiONS</h3>
+                        <a  class="icon icon-after icon-chevronright" aria-label="Learn more">Explore
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-chevron-right" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd"
+                                    d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
+                            </svg> </a>
+                        <!-- <p>Stay protected during your travels with comprehensive travel insurance coverage.</p> -->
+                    </div>
+                </div>
+                <!-- <div class="frame"> -->
+                    <div class="col-md-4">
+                        <img src="./world.png" alt="Photo 3" style="margin-left: 400px ">
+                    </div>
+                </div> 
+                <!-- </div> -->
+                <br>
+                <br>
+                <br>
+            
+                
+            <!-- </div> -->
+
+    </section>
+    <!-- <section>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card custom-card">
+                        <img src="./Amarnath.jpg" class="card-img-top fixed-image" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title"><strong>Amarnath</strong> </h4>
+                            <p class="card-text">Divinity to its epitome to meet and feel the vibe of that entity above
+                                us
+                            </p>
+                            <p class="card-text"><strong>From INR 45000 or INR 4499/mo. for 10 mo. </strong> </p>
+                            <a href="#" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                Add more cards here
+                <div class="col-md-4">
+                    <div class="card custom-card">
+                        <img src="./Kashmir.jpg" class="card-img-top fixed-image" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title"><strong>Kashmir</strong> </h4>
+                            <p class="card-text">High above the sea level, high on with love and nature</p>
+                            <p class="card-text"><strong>From INR 45000 or INR 4499/mo. for 10 mo. </strong> </p>
+                            <a href="#" class="btn btn-primary">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card custom-card">
+                        <img src="./Alleppy boat house.jpg" class="card-img-top fixed-image" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title"><strong>Alleppy</strong> </h4>
+                            <p class="card-text">Windy waves with chill green ambience to add beauty to nature</p>
+                            <p class="card-text"><strong>From INR 45000 or INR 4499/mo. for 10 mo. </strong> </p>
+                            <a href="#" class="btn btn-primary">Book now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card custom-card">
+                        <img src="./Leh.jpg" class="card-img-top fixed-image" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title"><strong>Leh and Ladakh</strong> </h4>
+                            <p class="card-text">Enjoy your honeymoon with chillness in and out of you with your beloved
+                                ones</p>
+                            <p class="card-text"><strong>From INR 45000 or INR 4499/mo. for 10 mo. </strong> </p>
+                            <a href="#" class="btn btn-primary">Book now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card custom-card">
+                        <img src="./Manali.jpg" class="card-img-top fixed-image" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title"><strong>Manali</strong> </h4>
+                            <p class="card-text">Mountains that invite with love and chilled warmth to enjoy its beauty
+                            </p>
+                            <p class="card-text"><strong>From INR 45000 or INR 4499/mo. for 10 mo. </strong> </p>
+                            <a href="#" class="btn btn-primary">Book now</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card custom-card">
+                        <img src="./Munnar.jpg" class="card-img-top fixed-image" alt="...">
+                        <div class="card-body">
+                            <h4 class="card-title"><strong>Munar</strong> </h4>
+                            <p class="card-text">Land of greenary that shows the true essence of what nature is</p>
+                            <p class="card-text"><strong>From INR 45000 or INR 4499/mo. for 10 mo. </strong> </p>
+                            <a href="#" class="btn btn-primary">Book now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+    <!-- <br> -->
+    <section>
+
+    </section>
+    <br>
+
     <footer class="footer">
         <div class="container">
             <div class="row">
