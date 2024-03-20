@@ -153,48 +153,84 @@
     color: #888;
 }
   </style>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+  document.addEventListener('DOMContentLoaded', function () {
+    emailjs.init('santhoshrajasandy97@gmail.com'); // Replace 'YOUR_USER_ID' with your EmailJS user ID
+
+    const contactForm = document.getElementById('contactForm');
+    contactForm.addEventListener('submit', function (event) {
+        event.preventDefault(); // Prevent the default form submission
+
+        emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
+            .then(function (response) {
+                console.log('SUCCESS!', response.status, response.text);
+                alert('Message sent successfully!');
+                contactForm.reset(); // Reset the form after successful submission
+            }, function (error) {
+                console.log('FAILED...', error);
+                alert('Error sending message. Please try again later.');
+            });
+    });
+});
+</script>
 <body>
 
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light">
-        <div class="container">
-            <a class="navbar-brand" href="index.html"><img src="./logo.png"
-                    style="max-width: 123px;"></a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Fixed Depatures</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">International Destinations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Domestic Destinations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contactus.html">Contact Us</a>
-                    </li>
-                    <!-- <li class="nav-item">
-                        <a class="nav-link" href="#">TV</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Music</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Support</a>
-                    </li> -->
-                </ul>
-            </div>
-        </div>
-    </nav>
- 
+    <section style="background-color: #01013c;">
+      <nav class="navbar navbar-expand-lg navbar-light " style="max-height: 80px;">
+          <div class="container" >
+              <a class="navbar-brand" href="index.html"><img src="./logo.png" style="max-width: 300px"></a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                  aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                      <ul class="navbar-nav ml-auto">
+                          <li class="nav-item active">
+                              <a class="nav-link" href="service.html" style="color: white;">Services</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#" style="color: white;">Fixed Depatures</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#" style="color: white;">International </a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#" style="color: white;">Domestic </a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#" style="color: white;">VISA </a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#" style="color: white;">Transfers </a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#" style="color: white;">Hotels </a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#" style="color: white;">Rail </a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="contactus.html" style="color: white;">Contact Us</a>
+                          </li>
+                          <!-- <li class="nav-item">
+                              <a class="nav-link" href="#">TV</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">Music</a>
+                          </li>
+                          <li class="nav-item">
+                              <a class="nav-link" href="#">Support</a>
+                          </li> -->
+                      </ul>
+                  </div>
+              </div>
+
+          </div>
+      </nav>
+  </section>
     
     <!-- Hero Section -->
 
@@ -219,22 +255,40 @@
             </div>
             <div class="col-md-6">
                 <div class="contact-form">
-                    <form>
+                    <form id="contactForm">
                         <div class="form-group">
                             <label for="name">Your Name</label>
-                            <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                            <input type="text" class="form-control" id="name" placeholder="Enter your name" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Your Email</label>
-                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea class="form-control" id="message" placeholder="Enter your message"></textarea>
+                            <textarea class="form-control" id="message" placeholder="Enter your message" required></textarea>
                         </div>
                         <button type="submit" class="btn btn-primary">Submit</button>
                     </form>
                 </div>
+                <!-- <div class="container">
+                  <h1>Contact Us</h1>
+                  <form action="mailto:recipient@example.com" method="POST" enctype="text/plain">
+                    <div class="form-group">
+                      <label for="name">Your Name:</label>
+                      <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="email">Your Email:</label>
+                      <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="message">Message:</label>
+                      <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">Send Message</button>
+                  </form>
+                </div> -->
             </div>
         </div>
         <br>
