@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugamyam FiNE DESTiNATiONS</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        font-family: 'Arial', sans-serif;
+        /* Change to your desired font */
+    }
+
+    .custom-card {
+        border: none;
+        transition: transform 0.3s ease;
+    }
+
+    .custom-card:hover {
+        transform: scale(1.05);
+    }
+
+    .card-img-top {
+        transition: transform 0.3s ease;
+    }
+
+    .custom-card:hover .card-img-top {
+        transform: scale(1.1);
+    }
+
+    .fixed-image {
+        width: 350px;
+        /* Adjust width as needed */
+        height: 300px;
+        /* Adjust height as needed */
+    }
+
+    .step {
+        padding: 20px;
+        border: 1px solid #ced4da;
+        border-radius: 10px;
+        background-color: #fff;
+    }
+
+    .welcome-section {
+        padding: 100px 0;
+        text-align: center;
+    }
+
+    .welcome-text {
+        font-size: 48px;
+        font-weight: bold;
+        color: #333;
+        /* margin-bottom: 20px; */
+    }
+
+    .welcome-text-fine {
+        font-size: 23px;
+        font-weight: bold;
+        color: #333;
+        margin-bottom: 20px;
+    }
+
+    .subtext {
+        font-size: 24px;
+        color: #666;
+    }
+
+    .frame-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .frame {
+        width: calc(33.33% - 20px);
+        position: relative;
+    }
+
+    .frame img {
+        width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+
+    @media (max-width: 768px) {
+        .frame {
+            width: calc(50% - 20px);
+        }
+    }
+
+    @media (max-width: 576px) {
+        .frame {
+            width: calc(100% - 20px);
+        }
+    }
+
+    .service {
+        margin-bottom: 30px;
+    }
+
+    .image-container-world {
+        position: relative;
+        height: 500px;
+        /* Set image container height */
+        overflow: hidden;
+        /* Hide overflow to prevent image spill */
+    }
+
+    .overlay-text {
+        position: absolute;
+        top: 17%;
+        /* Position text vertically centered */
+        left: 50%;
+        /* Position text horizontally centered */
+        transform: translate(-50%, -50%);
+        /* Center text using translate */
+        color: rgb(5, 5, 5);
+        /* Text color */
+        font-size: 24px;
+        /* Text font size */
+        text-align: center;
+        /* Center-align text */
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        /* Add shadow to text */
+    }
+
+    .image-world {
+        width: 100%;
+        /* Ensure image fills container width */
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+
+    .section-heading {
+        margin-top: 50px;
+        border-bottom: 1px solid #ccc;
+        padding-bottom: 10px;
+    }
+
+    .footer-links {
+        list-style: none;
+        padding: 0;
+    }
+
+    .footer-links li {
+        margin-bottom: 10px;
+    }
+
+    .footer-links a {
+        color: #333;
+        text-decoration: none;
+    }
+
+    .footer-links a:hover {
+        color: #007bff;
+    }
+
+    .footer-divider {
+        border-top: 1px solid #ccc;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .footer .text-muted {
+        color: #888;
+    }
+</style>
+
+<body>
+
+    <!-- Navbar -->
+    <section style="background-color: #01013c;">
+        <nav class="navbar navbar-expand-lg navbar-light " style="max-height: 50px;">
+            <div class="container" >
+                <a class="navbar-brand" href="index.html"><img src="./logo.png" style="max-width: 180px"></a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="service.html" style="color: white;">Services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="fixeddepatures.html" style="color: white;">Fixed Departures</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="international.html" style="color: white;">International </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#" style="color: white;">Domestic </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="visa.html" style="color: white;">VISA </a>
+                            </li>
+                         
+                            <li class="nav-item">
+                                <a class="nav-link" href="contactus.html" style="color: white;">Contact Us</a>
+                            </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link" href="#">TV</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Music</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Support</a>
+                            </li> -->
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </nav>
+    </section>
+
+
+    <!-- Hero Section -->
+
+
+    <!-- Main Content -->
+
+
+
+    <br>
+
+    <section>
+        <div class="container">
+            <h5 class="text-center mb-4 welcome-text" style="font-size: 48px;">About Us</h5>
+
+            <!-- <h2>For your Information</h2> -->
+            <p style="text-align: center;">At SUGAMYAM Fine Destinations, we redefine travel through elegance, precision, and personalized excellence. Established in December 2025, our brand was created with a singular vision—to craft journeys that are not only seamless but truly exceptional in every sense.<br>
+
+Under the leadership of <b>Aravind Chandrasekaran</b>, the company is built on a foundation of expertise and operational excellence. With over seven years of experience in airport operations, complemented by extensive exposure to travel management, our leadership brings a rare blend of discipline, insight, and attention to detail that elevates every client experience.
+
+We specialize in curating bespoke travel experiences tailored to individual preferences, ensuring that every itinerary reflects sophistication, comfort, and flawless execution. From the first interaction to the final journey touchpoint, our approach is defined by discretion, responsiveness, and uncompromising quality.
+
+At SUGAMYAM, we understand that luxury lies in the details—timely communication, seamless coordination, and the assurance that every aspect of your journey is handled with care. Our clients choose us not just for travel planning, but for the confidence and peace of mind that comes with a trusted partner.
+
+We don’t just plan trips—we design refined travel experiences where every moment is thoughtfully crafted, and every journey feels effortlessly “Sugamyam” — smooth, indulgent, and truly memorable.</p>
+        </div>
+    </section>
+
+
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 footer-divider"></div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="text-muted">Copyright &copy; 2015 Sugamyam FiNE DESTiNATiON | All rights reserved.</p>
+                </div>
+                <ul class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a> |
+                    <a href="terms.html">Terms of Use</a> |
+                    <a href="#">Sales and Refunds</a> |
+                    <a href="#">Legal</a> |
+                    <a href="site.html">Site Map</a>
+                </ul>
+            </div>
+        </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
